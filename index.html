@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Hygiene</title>
+    <!-- <link rel="stylesheet" href="/CSS/0703-1.css?after" /> -->
+    <style>
+      div {
+        border: 5px solid red;
+        width: 400px;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+      }
+      [src="/images/1-1.png"] {
+        animation: show 1s 0.5s both;
+      }
+      [src="/images/1-2.png"] {
+        animation: down 2.5s 0.8s both;
+      }
+      [src="/images/1-3.png"] {
+        animation: big 1.8s 1s both;
+      }
+      [src="/images/1-4.png"] {
+        animation: to_left 2s 1.2s both;
+      }
+      [src="/images/1-5.png"] {
+        animation: show 2.5s 1.5s both;
+      }
+      img:not(:first-of-type) {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes down {
+        from {
+          top: -150px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @keyframes big {
+        from {
+          transform: scaleX(0);
+
+          to {
+            transform: scaleX(1);
+          }
+        }
+      }
+      @keyframes to_left {
+        from {
+          left: 200px;
+          opacity: 0;
+        }
+        to {
+          left: 0px;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="/images/bg1.jpg" alt="배경" />
+      <img src="/images/1-1.png" alt="손과 식물" />
+      <img src="/images/1-2.png" alt="손과 솔잎" />
+      <img src="/images/1-3.png" alt="개인 위생" />
+      <img src="/images/1-4.png" alt="자동차" />
+      <img src="/images/1-5.png" alt="손과 솔잎" />
+    </div>
+  </body>
+</html>
